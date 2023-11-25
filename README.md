@@ -176,15 +176,14 @@ Cabe destacar que para la realizacion de esta interfaz se necesitó de modificar
 Por otra parte, teniendo en cuenta estas velocidades modificadas; durante la practica se vió como al realizar movimientos muy rapidos, la base del robot tiende a moverse del punto inicial, haciendo que todas las trayectorias previamente planeadas ya no sean efectivas, por lo que se evidenciaron errores al cargar y descargar la herramienta; por tal motivo se buscó una forma de mantener la base del robot estática y asi se obtuivieran los trazos mas reproducibles posibles.
 
 ## Comparación de Trazos
-Trazos de Phantom X
+### Trazos de Phantom X
 ![recortada](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/a6beebc7-c809-41a3-9f45-333c65ded246)
 
-
-Trazos en Geogebra
+### Trazos en Geogebra
 
 ![image](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/f87b0714-7d03-45eb-885d-7d30e116abc9)
 
-Superposicion de Trazos
+### Superposicion de Trazos
 ![comparacion](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/c1ff99ca-4066-43d6-85f0-c3ab57330602)
 
 Realizando una superposicion de las dos imagenes de los trazos generados y los deseados, se obtuvo la siguietne imagen, la cual al analizarce se observó como el error maximo en los trazos, entendido como la maxima diferencia entre puntos especificados fue en aumento conforme se acercaba al ultimo trazo dibujado por el phantom. Analizando la imagen, teniendo una resolución tal que 1pixel=1cm se obtuvo que el error maximo para los arcos internos y externos es de 2cm, para la empanada de 3cm aprox, mientras que para las iniciales: A con 8cm y S con 12cm aporximados de error entre puntos. Con estos se puede afirmar que conforme el robot fue dibuajndo los trazos requeridos fue aumentando el error, ya sea por errores en el control de posicion de los servos y/o por movimientos indeseados del marcador a pesar de las adaptaciones hechas al mismo para evitar eso mismo.
