@@ -1,4 +1,4 @@
-# Laboratorio4_Cinematica-Inversa_PhantomX_ROS
+# Laboratorio5_Cinematica-Inversa_PhantomX_ROS
 
 ## Solucion plateada
 
@@ -190,6 +190,9 @@ Por otra parte, teniendo en cuenta estas velocidades modificadas; durante la pra
 Realizando una superposicion de las dos imagenes de los trazos generados y los deseados, se obtuvo la siguietne imagen, la cual al analizarce se observó como el error maximo en los trazos, entendido como la maxima diferencia entre puntos especificados fue en aumento conforme se acercaba al ultimo trazo dibujado por el phantom. Analizando la imagen, teniendo una resolución tal que 1pixel=1cm se obtuvo que el error maximo para los arcos internos y externos es de 2cm, para la empanada de 3cm aprox, mientras que para las iniciales: A con 8cm y S con 12cm aporximados de error entre puntos. Con estos se puede afirmar que conforme el robot fue dibuajndo los trazos requeridos fue aumentando el error, ya sea por errores en el control de posicion de los servos y/o por movimientos indeseados del marcador a pesar de las adaptaciones hechas al mismo para evitar eso mismo.
 
 ## Portaherramienta y marcador
-Para poder realizar el presente laboratorio, se diseñó el siguiente portaherramientas el cual habría de sostener el marcador borrable que se usó durante la practica. Este marcador se uso junto con un anillo de plastilina el cual ayudaba a evitar el movimiento del marcador en direcciones indeseadas, fruto de la friccion con el tablero. Cabe destacar que el marcador siempre 
+Para poder realizar el presente laboratorio, se diseñó el siguiente portaherramientas el cual habría de sostener el marcador borrable que se usó durante la practica. Este marcador se uso junto con un anillo de plastilina el cual ayudaba a evitar el movimiento del marcador en direcciones indeseadas, fruto de la friccion con el tablero. Cabe destacar que el marcador con el portaherramientas y el anillo de plastilina permitia cogerlo facilmente con el gripper del robot y realizar las rutinas correspondientes.
 
 ![68c2fc1c-5974-4199-93bf-b2abe766fb57](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/4933d62c-1221-410f-9ec4-9723f49d0091)
+
+Para ver los planos del portaherramienta diseñado ir al link: [Planos](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/blob/main/Planos.pdf)
+
