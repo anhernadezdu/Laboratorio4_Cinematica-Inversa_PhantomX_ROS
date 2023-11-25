@@ -4,7 +4,8 @@
 
 Se realizaron las mediciones pertinentes de los eslabones del phanton, una vez con estas medidas se sacó el modelo de cinematica inversa del robot usando el modelo geometrico con desacople de muñeca. Las medidas L0 a L5 corresponden a las distancias entre: base-articulación1, art1-art2, art2-art3, art3-art4, art4-centro de pinza y centro de pinza-punta de marcador. Estas distancias se encuentran en al primera línea de la función _CinInv()_ de [Interfaz](lab5Interfazv2.py).
 Adicionalmente se hallan las siguientes ecuaciones para determinar los valores de las articulaciones q1, q2, q3 y q4 usando los siguientes diagramas.
-![46b739a9-2a76-4600-85a5-8ed56ef3df30](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/388d460b-e36f-4b96-9b70-d68104b9971a)
+![Diglab5pdf_001](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70998067/8e5f5e01-6472-497b-8855-7a115c9c8510)
+
 $$P= O- R\cdot P4 \qquad P=[px;\quad py;\quad pz]\qquad O=[x;\quad y;\quad z]\qquad P4=[-l5;\quad 0;\quad L4]$$
 Donde P4 es la traslación de la articulación 3 al TCP; P es el punto de la muñeca al realizarsele el desacople cinematico y sobre se ha de calcular los demas valores de las articulaciones; R es la matriz de rotacion correspondiente a la orientación deseada en el TPC la cual se escogio con los siguientes angulos de euler: 
 
