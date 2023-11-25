@@ -184,6 +184,10 @@ Trazos en Geogebra
 
 ![image](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/f87b0714-7d03-45eb-885d-7d30e116abc9)
 
+Superposicion de Trazos
+![comparacion](https://github.com/anhernadezdu/Laboratorio5_Cinematica-Inversa_PhantomX_ROS/assets/70985250/c1ff99ca-4066-43d6-85f0-c3ab57330602)
+
+Realizando una superposicion de las dos imagenes de los trazos generados y los deseados, se obtuvo la siguietne imagen, la cual al analizarce se observó como el error maximo en los trazos, entendido como la maxima diferencia entre puntos especificados fue en aumento conforme se acercaba al ultimo trazo dibujado por el phantom. Analizando la imagen, teniendo una resolución tal que 1pixel=1cm se obtuvo que el error maximo para los arcos internos y externos es de 2cm, para la empanada de 3cm aprox, mientras que para las iniciales: A con 8cm y S con 12cm aporximados de error entre puntos. Con estos se puede afirmar que conforme el robot fue dibuajndo los trazos requeridos fue aumentando el error, ya sea por errores en el control de posicion de los servos y/o por movimientos indeseados del marcador a pesar de las adaptaciones hechas al mismo para evitar eso mismo.
 
 ## Portaherramienta y marcador
 Para poder realizar el presente laboratorio, se diseñó el siguiente portaherramientas el cual habría de sostener el marcador borrable que se usó durante la practica. Este marcador se uso junto con un anillo de plastilina el cual ayudaba a evitar el movimiento del marcador en direcciones indeseadas, fruto de la friccion con el tablero. Cabe destacar que el marcador siempre 
