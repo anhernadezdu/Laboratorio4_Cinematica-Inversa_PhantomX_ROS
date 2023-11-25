@@ -137,7 +137,7 @@ def circuloExt():
     #time.sleep(0.5)
     home()
 ```
-Finalmente estan las funciones _AS()_ y _empanada()_ las cuales son un compendio de puntos los cuales al unirse forman la trayectoria la cual el marcador traza, dibujando asi las iniciales de los integrandes del grupo (A y S) y dibuja la figura libre elegida la cual fue una empanada. Para estas trayectorias, se tuvo que modificar los valores en z de cada punto debido a que, tanto el espacio de trabajo como la forma en la que el publisher del phantom dibujaba la trayectoria punto a punto, tenian imperfecciones que desfiguraban los trazos. A lo anterior tambien se suma el error en la pinza debido a una mala colocacion del marcador.
+Finalmente estan las funciones _AS()_ y _empanada()_ las cuales son un compendio de puntos los cuales al unirse forman la trayectoria la cual el marcador traza, dibujando asi las iniciales de los integrandes del grupo (A y S) y dibuja la figura libre elegida la cual fue una empanada. Estos puntos fueron hallados haciendo uso de la calculadora gráfica de Geogebra, los puntos se exportan al script en python. Para estas trayectorias, se tuvo que modificar los valores en z de cada punto debido a que, tanto el espacio de trabajo como la forma en la que el publisher del phantom dibujaba la trayectoria punto a punto, tenian imperfecciones que desfiguraban los trazos. A lo anterior tambien se suma el error en la pinza debido a una mala colocacion del marcador.
 ```
 def AS():
     #puntos de A
@@ -170,6 +170,10 @@ def empanada():
 ## Interfaz HMI
 Se muestra el video con la interfaz en el siguiente link:
 https://drive.google.com/file/d/1HARtszz2kdGGHv8oBotCvTdXesUnPbDf/view?usp=sharing
+
+Cabe destacar que para la realizacion de esta interfaz se necesitó de modificar el archivo (CMakeLists.txt)[CMakeLists.txt] para incluir imagenes en el codigo de python dentro de una carpeta *resources* creada dentro del paquete *px_robot*; junto con el archivo yaml (joints)[joints.yaml], esto para que el movimiento sea más rapido pero sin exceder cierta velocidad que haga que el robot este propenso a errores y paradas de emergencia. 
+
+Por otra parte, teniendo en cuenta estas velocidades modificadas; durante la practica se vió como al realizar movimientos muy rapidos, la base del robot tiende a moverse del punto inicial, haciendo que todas las trayectorias previamente planeadas ya no sean efectivas, por lo que se evidenciaron errores al cargar y descargar la herramienta; por tal motivo se buscó una forma de mantener la base del robot estática y asi se obtuivieran los trazos mas reproducibles posibles.
 
 ## Comparación de Trazos
 Trazos de Phantom X
